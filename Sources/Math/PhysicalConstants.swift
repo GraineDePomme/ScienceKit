@@ -1,5 +1,5 @@
 
-struct Constants {
+struct PhysicalConstants {
 
     // The speed of light in vacuum : m s^-1
     static let speedOfLight: Double = 299_792_458
@@ -46,56 +46,56 @@ struct Constants {
 /// Extending the Double type to include the physical constants defined above. 
 public extension Double {
 
-    static let speedOfLight: Double = Double(Constants.speedOfLight)
-    static let newtonianGravitationalConstant: Double = Double(Constants.newtonianGravitationalConstant)
-    static let planckConstant: Double = Double(Constants.planckConstant)
-    static let reducedPlanckConstant: Double = Double(Constants.reducedPlanckConstant)
-    static let elementaryCharge: Double = Double(Constants.elementaryCharge)
-    static let boltzmannConstant: Double = Double(Constants.boltzmannConstant)
-    static let avogadroConstant: Double = Double(Constants.avogadroConstant)
-    static let molarGasConstant: Double = Double(Constants.molarGasConstant)
-    static let electronMass: Double = Double(Constants.electronMass)
-    static let protonMass: Double = Double(Constants.protonMass)
-    static let neutronMass: Double = Double(Constants.neutronMass)
-    static let vacuumPermittivity: Double = Double(Constants.vacuumPermittivity)
-    static let vacuumPermeability: Double = Double(Constants.vacuumPermeability)
+    static let speedOfLight: Double = Double(PhysicalConstants.speedOfLight)
+    static let newtonianGravitationalConstant: Double = Double(PhysicalConstants.newtonianGravitationalConstant)
+    static let planckConstant: Double = Double(PhysicalConstants.planckConstant)
+    static let reducedPlanckConstant: Double = Double(PhysicalConstants.reducedPlanckConstant)
+    static let elementaryCharge: Double = Double(PhysicalConstants.elementaryCharge)
+    static let boltzmannConstant: Double = Double(PhysicalConstants.boltzmannConstant)
+    static let avogadroConstant: Double = Double(PhysicalConstants.avogadroConstant)
+    static let molarGasConstant: Double = Double(PhysicalConstants.molarGasConstant)
+    static let electronMass: Double = Double(PhysicalConstants.electronMass)
+    static let protonMass: Double = Double(PhysicalConstants.protonMass)
+    static let neutronMass: Double = Double(PhysicalConstants.neutronMass)
+    static let vacuumPermittivity: Double = Double(PhysicalConstants.vacuumPermittivity)
+    static let vacuumPermeability: Double = Double(PhysicalConstants.vacuumPermeability)
     
 }
 
 /// Extending the Float32 type to include the physical constants defined above. 
 public extension Float32 {
 
-    static let speedOfLight: Float32 = Float32(Constants.speedOfLight)
-    static let newtonianGravitationalConstant: Float32 = Float32(Constants.newtonianGravitationalConstant)
-    static let planckConstant: Float32 = Float32(Constants.planckConstant)
-    static let reducedPlanckConstant: Float32 = Float32(Constants.reducedPlanckConstant)
-    static let elementaryCharge: Float32 = Float32(Constants.elementaryCharge)
-    static let boltzmannConstant: Float32 = Float32(Constants.boltzmannConstant)
-    static let avogadroConstant: Float32 = Float32(Constants.avogadroConstant)
-    static let molarGasConstant: Float32 = Float32(Constants.molarGasConstant)
-    static let electronMass: Float32 = Float32(Constants.electronMass)
-    static let protonMass: Float32 = Float32(Constants.protonMass)
-    static let neutronMass: Float32 = Float32(Constants.neutronMass)
-    static let vacuumPermittivity: Float32 = Float32(Constants.vacuumPermittivity)
-    static let vacuumPermeability: Float32 = Float32(Constants.vacuumPermeability)
+    static let speedOfLight: Float32 = Float32(PhysicalConstants.speedOfLight)
+    static let newtonianGravitationalConstant: Float32 = Float32(PhysicalConstants.newtonianGravitationalConstant)
+    static let planckConstant: Float32 = Float32(PhysicalConstants.planckConstant)
+    static let reducedPlanckConstant: Float32 = Float32(PhysicalConstants.reducedPlanckConstant)
+    static let elementaryCharge: Float32 = Float32(PhysicalConstants.elementaryCharge)
+    static let boltzmannConstant: Float32 = Float32(PhysicalConstants.boltzmannConstant)
+    static let avogadroConstant: Float32 = Float32(PhysicalConstants.avogadroConstant)
+    static let molarGasConstant: Float32 = Float32(PhysicalConstants.molarGasConstant)
+    static let electronMass: Float32 = Float32(PhysicalConstants.electronMass)
+    static let protonMass: Float32 = Float32(PhysicalConstants.protonMass)
+    static let neutronMass: Float32 = Float32(PhysicalConstants.neutronMass)
+    static let vacuumPermittivity: Float32 = Float32(PhysicalConstants.vacuumPermittivity)
+    static let vacuumPermeability: Float32 = Float32(PhysicalConstants.vacuumPermeability)
     
 }
 
 /// Extending the Float16 type to include the physical constants defined above. 
 public extension Float16 {
 
-    static let speedOfLight: Float16 = Float16(Constants.speedOfLight)
-    static let newtonianGravitationalConstant: Float16 = Float16(Constants.newtonianGravitationalConstant)
-    static let planckConstant: Float16 = Float16(Constants.planckConstant)
-    static let reducedPlanckConstant: Float16 = Float16(Constants.reducedPlanckConstant)
-    static let elementaryCharge: Float16 = Float16(Constants.elementaryCharge)
-    static let boltzmannConstant: Float16 = Float16(Constants.boltzmannConstant)
-    static let avogadroConstant: Float16 = Float16(Constants.avogadroConstant)
-    static let molarGasConstant: Float16 = Float16(Constants.molarGasConstant)
-    static let electronMass: Float16 = Float16(Constants.electronMass)
-    static let protonMass: Float16 = Float16(Constants.protonMass)
-    static let neutronMass: Float16 = Float16(Constants.neutronMass)
-    static let vacuumPermittivity: Float16 = Float16(Constants.vacuumPermittivity)
-    static let vacuumPermeability: Float16 = Float16(Constants.vacuumPermeability)
+    static let speedOfLight: Float16 = Float16(PhysicalConstants.speedOfLight)
+    static let newtonianGravitationalConstant: Float16 = Float16(PhysicalConstants.newtonianGravitationalConstant)
+    static let planckConstant: Float16 = Float16(PhysicalConstants.planckConstant)
+    static let reducedPlanckConstant: Float16 = Float16(PhysicalConstants.reducedPlanckConstant)
+    static let elementaryCharge: Float16 = Float16(PhysicalConstants.elementaryCharge)
+    static let boltzmannConstant: Float16 = Float16(PhysicalConstants.boltzmannConstant)
+    static let avogadroConstant: Float16 = Float16(PhysicalConstants.avogadroConstant)
+    static let molarGasConstant: Float16 = Float16(PhysicalConstants.molarGasConstant)
+    static let electronMass: Float16 = Float16(PhysicalConstants.electronMass)
+    static let protonMass: Float16 = Float16(PhysicalConstants.protonMass)
+    static let neutronMass: Float16 = Float16(PhysicalConstants.neutronMass)
+    static let vacuumPermittivity: Float16 = Float16(PhysicalConstants.vacuumPermittivity)
+    static let vacuumPermeability: Float16 = Float16(PhysicalConstants.vacuumPermeability)
     
 }
