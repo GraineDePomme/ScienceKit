@@ -2,3 +2,4 @@
 // https://docs.swift.org/swift-book
 
 @_exported import Calculus
+@_exported import Math

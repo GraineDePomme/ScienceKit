@@ -12,14 +12,25 @@ let package = Package(
             targets: ["ScienceKit"]),
     ],
 
+    dependencies: [
+        .package(url: "https://github.com/apple/swift-numerics", from: "1.0.0")
+    ],
+
     targets: [
 
         .target(
             name: "ScienceKit",
-            dependencies: ["Calculus"]),
+            dependencies: ["Math", "Calculus", .product(name: "Numerics", package: "swift-numerics")]
+        ),
 
         .target(
-            name: "Calculus"
+            name: "Calculus",
+            dependencies: [.product(name: "Numerics", package: "swift-numerics")]
+        ),
+
+        .target(
+            name: "Math",
+            dependencies: [.product(name: "Numerics", package: "swift-numerics")]
         ),
 
         .testTarget(
