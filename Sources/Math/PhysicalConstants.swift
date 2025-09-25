@@ -80,3 +80,22 @@ public extension Float32 {
     static let vacuumPermeability: Float32 = Float32(Constants.vacuumPermeability)
     
 }
+
+/// Extending the Float16 type to include the physical constants defined above. 
+public extension Float16 {
+
+    static let speedOfLight: Float16 = Float16(Constants.speedOfLight)
+    static let newtonianGravitationalConstant: Float16 = Float16(Constants.newtonianGravitationalConstant)
+    static let planckConstant: Float16 = Float16(Constants.planckConstant)
+    static let reducedPlanckConstant: Float16 = Float16(Constants.reducedPlanckConstant)
+    static let elementaryCharge: Float16 = Float16(Constants.elementaryCharge)
+    static let boltzmannConstant: Float16 = Float16(Constants.boltzmannConstant)
+    static let avogadroConstant: Float16 = Float16(Constants.avogadroConstant)
+    static let molarGasConstant: Float16 = Float16(Constants.molarGasConstant)
+    static let electronMass: Float16 = Float16(Constants.electronMass)
+    static let protonMass: Float16 = Float16(Constants.protonMass)
+    static let neutronMass: Float16 = Float16(Constants.neutronMass)
+    static let vacuumPermittivity: Float16 = Float16(Constants.vacuumPermittivity)
+    static let vacuumPermeability: Float16 = Float16(Constants.vacuumPermeability)
+    
+}
