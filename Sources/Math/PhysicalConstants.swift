@@ -40,6 +40,9 @@ struct PhysicalConstants {
     // The vacuum magnetic permeability : N A^-2
     static let vacuumPermeability: Double = 1.256_637_061_27e-6
 
+    // The Rydberg constant : m^-1
+    static let rydbergConstant: Double = 10_973_731.568_157
+
 }
 
 
@@ -59,6 +62,7 @@ public extension Double {
     static let neutronMass: Double = Double(PhysicalConstants.neutronMass)
     static let vacuumPermittivity: Double = Double(PhysicalConstants.vacuumPermittivity)
     static let vacuumPermeability: Double = Double(PhysicalConstants.vacuumPermeability)
+    static let rydbergConstant: Double = Double(PhysicalConstants.rydbergConstant)
     
 }
 
@@ -78,6 +82,7 @@ public extension Float32 {
     static let neutronMass: Float32 = Float32(PhysicalConstants.neutronMass)
     static let vacuumPermittivity: Float32 = Float32(PhysicalConstants.vacuumPermittivity)
     static let vacuumPermeability: Float32 = Float32(PhysicalConstants.vacuumPermeability)
+    static let rydbergConstant: Float32 = Float32(PhysicalConstants.rydbergConstant)
     
 }
 
@@ -97,5 +102,6 @@ public extension Float16 {
     static let neutronMass: Float16 = Float16(PhysicalConstants.neutronMass)
     static let vacuumPermittivity: Float16 = Float16(PhysicalConstants.vacuumPermittivity)
     static let vacuumPermeability: Float16 = Float16(PhysicalConstants.vacuumPermeability)
+    static let rydbergConstant: Float16 = Float16(PhysicalConstants.rydbergConstant)
     
 }
