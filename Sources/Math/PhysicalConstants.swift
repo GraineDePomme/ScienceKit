@@ -3,57 +3,42 @@ struct PhysicalConstants {
 
     // The speed of light in vacuum : m s^-1
     static let speedOfLight: Double = 299_792_458
-
     // The newtonian constant of gravitation (G) : m^3 kg^-1 s^-2
     static let newtonianGravitationalConstant: Double = 6.674_30e-11
-
     // The planck constant : J Hz^-1
     static let planckConstant: Double = 6.626_070_15e-34
-
     // The reduced planck constant : J s
     static let reducedPlanckConstant: Double = 1.054_571_817_646_1563e-34
-
     // The elementary charge : C
     static let elementaryCharge: Double = 1.602_176_634e-19
-
     // The Boltzmann constant : J K^-1
     static let boltzmannConstant: Double = 1.380_649e-23
-
     // The Avogadro constant : mol^-1
     static let avogadroConstant: Double = 6.022_140_76e23
-
     // The molar gas constant : J mol^-1 K^-1
     static let molarGasConstant: Double = 8.314_462_618_153_24
-
     // The mass of one electron : kg
     static let electronMass: Double = 9.109_383_7139e-31
-
     // The mass of one proton : kg
     static let protonMass: Double = 1.672_621_925_95e-27
-
     // The mass of one neutron : kg
     static let neutronMass: Double = 1.674_927_500_56e-27
-
     // The vacuum electric permittivity : F m^-1
     static let vacuumPermittivity: Double = 8.854_187_8188e-12
-
     // The vacuum magnetic permeability : N A^-2
     static let vacuumPermeability: Double = 1.256_637_061_27e-6
-
     // The Rydberg constant : m^-1
     static let rydbergConstant: Double = 10_973_731.568_157
-
     // The standard acceleration fo gravitation on Earth : m s^-2
     static let standardGravityAcceleration: Double = 9.806_65
-
     // The mass of the sun : kg
     static let sunMass: Double = 1_989_100e24
-
     // The Coulomb's constant, 1 / 4 * pi * e0 : m F^-1
     static let coulombConstant: Double = 8.987_551_7862e9
-
     // The mass of the Earth : kg
     static let earthMass: Double = 5.973e24
+    // The radius of Earth : m
+    static let earthRadius: Double = 6_378_137
 
 }
 
@@ -79,7 +64,7 @@ public extension Double {
     static let sunMass: Double = Double(PhysicalConstants.sunMass)
     static let coulombConstant: Double = Double(PhysicalConstants.sunMass)
     static let earthMass: Double = Double(PhysicalConstants.earthMass)
-    
+    static let earthRadius: Double = Double(PhysicalConstants.earthRadius)
 }
 
 /// Extending the Float32 type to include the physical constants defined above. 
@@ -103,7 +88,7 @@ public extension Float32 {
     static let sunMass: Float32 = Float32(PhysicalConstants.sunMass)
     static let coulombConstant: Float32 = Float32(PhysicalConstants.sunMass)
     static let earthMass: Float32 = Float32(PhysicalConstants.earthMass)
-    
+    static let earthRadius: Float32 = Float32(PhysicalConstants.earthRadius)
 }
 
 /// Extending the Float16 type to include the physical constants defined above. 
@@ -125,5 +110,5 @@ public extension Float16 {
     static let rydbergConstant: Float16 = Float16(PhysicalConstants.rydbergConstant)
     static let standardGravityAcceleration: Float16 = Float16(PhysicalConstants.standardGravityAcceleration)
     static let coulombConstant: Float16 = Float16(PhysicalConstants.sunMass)
-    
+    static let earthRadius: Float16 = Float16(PhysicalConstants.earthRadius)
 }

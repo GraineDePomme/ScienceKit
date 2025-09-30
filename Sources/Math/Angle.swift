@@ -12,7 +12,7 @@ public enum AngleUnit {
 }
 
 public extension Double {
-    func convertAngle(from unitOfOrigin: AngleUnit, to targetUnit: AngleUnit) -> Double {
+    func convert(from unitOfOrigin: AngleUnit, to targetUnit: AngleUnit) -> Double {
 
         var result: Double = self
 
@@ -58,7 +58,7 @@ public extension Double {
 
 
 public extension Float32 {
-    func convertAngle(from unitOfOrigin: AngleUnit, to targetUnit: AngleUnit) -> Float32 {
+    func convert(from unitOfOrigin: AngleUnit, to targetUnit: AngleUnit) -> Float32 {
 
         var result: Float32 = self
 
@@ -104,7 +104,7 @@ public extension Float32 {
 
 
 public extension Float16 {
-    func convertAngle(from unitOfOrigin: AngleUnit, to targetUnit: AngleUnit) -> Float16 {
+    func convert(from unitOfOrigin: AngleUnit, to targetUnit: AngleUnit) -> Float16 {
 
         var result: Float16 = self
 
