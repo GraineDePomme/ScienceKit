@@ -52,6 +52,9 @@ struct PhysicalConstants {
     // The Coulomb's constant, 1 / 4 * pi * e0 : m F^-1
     static let coulombConstant: Double = 8.987_551_7862e9
 
+    // The mass of the Earth : kg
+    static let earthMass: Double = 5.973e24
+
 }
 
 
@@ -75,6 +78,7 @@ public extension Double {
     static let standardGravityAcceleration: Double = Double(PhysicalConstants.standardGravityAcceleration)
     static let sunMass: Double = Double(PhysicalConstants.sunMass)
     static let coulombConstant: Double = Double(PhysicalConstants.sunMass)
+    static let earthMass: Double = Double(PhysicalConstants.earthMass)
     
 }
 
@@ -98,6 +102,7 @@ public extension Float32 {
     static let standardGravityAcceleration: Float32 = Float32(PhysicalConstants.standardGravityAcceleration)
     static let sunMass: Float32 = Float32(PhysicalConstants.sunMass)
     static let coulombConstant: Float32 = Float32(PhysicalConstants.sunMass)
+    static let earthMass: Float32 = Float32(PhysicalConstants.earthMass)
     
 }
 
