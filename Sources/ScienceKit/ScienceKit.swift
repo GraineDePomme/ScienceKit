@@ -3,4 +3,4 @@
 
 @_exported import Calculus
 @_exported import Math
-
+@_exported import Polynomial

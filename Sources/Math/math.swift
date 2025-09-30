@@ -36,3 +36,25 @@ public extension Float16 {
         return (self * magnitude).rounded() / magnitude
     }
 }
+
+
+public func hypot<ℝ: Real>(_ x: ℝ, _ y: ℝ, _ z: ℝ = ℝ.zero) -> ℝ {
+    let x: ℝ = abs(x)
+    let y: ℝ = abs(y)
+    let z: ℝ = abs(z)
+
+    let w: ℝ = .maximum(x, .maximum(y, z))
+
+    if w == 0 { 
+        return 0 
+    } else {
+        let result: ℝ = {
+            let a: ℝ = (x / w) * (x / w)
+            let b: ℝ = (y / w) * (y / w)
+            let c: ℝ = (z / w) * (z / w)
+            return w * .sqrt(a + b + c)
+        }()
+
+        return result
+    }
+}

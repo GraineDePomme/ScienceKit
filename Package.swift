@@ -20,7 +20,7 @@ let package = Package(
 
         .target(
             name: "ScienceKit",
-            dependencies: ["Math", "Calculus", .product(name: "Numerics", package: "swift-numerics")]
+            dependencies: ["Math", "Calculus", "Polynomial", .product(name: "Numerics", package: "swift-numerics")]
         ),
 
         .target(
@@ -30,6 +30,11 @@ let package = Package(
 
         .target(
             name: "Math",
+            dependencies: [.product(name: "Numerics", package: "swift-numerics")]
+        ),
+
+        .target(
+            name: "Polynomial",
             dependencies: [.product(name: "Numerics", package: "swift-numerics")]
         ),
 

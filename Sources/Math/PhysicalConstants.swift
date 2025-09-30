@@ -43,6 +43,15 @@ struct PhysicalConstants {
     // The Rydberg constant : m^-1
     static let rydbergConstant: Double = 10_973_731.568_157
 
+    // The standard acceleration fo gravitation on Earth : m s^-2
+    static let standardGravityAcceleration: Double = 9.806_65
+
+    // The mass of the sun : kg
+    static let sunMass: Double = 1_989_100e24
+
+    // The Coulomb's constant, 1 / 4 * pi * e0 : m F^-1
+    static let coulombConstant: Double = 8.987_551_7862e9
+
 }
 
 
@@ -63,6 +72,9 @@ public extension Double {
     static let vacuumPermittivity: Double = Double(PhysicalConstants.vacuumPermittivity)
     static let vacuumPermeability: Double = Double(PhysicalConstants.vacuumPermeability)
     static let rydbergConstant: Double = Double(PhysicalConstants.rydbergConstant)
+    static let standardGravityAcceleration: Double = Double(PhysicalConstants.standardGravityAcceleration)
+    static let sunMass: Double = Double(PhysicalConstants.sunMass)
+    static let coulombConstant: Double = Double(PhysicalConstants.sunMass)
     
 }
 
@@ -83,6 +95,9 @@ public extension Float32 {
     static let vacuumPermittivity: Float32 = Float32(PhysicalConstants.vacuumPermittivity)
     static let vacuumPermeability: Float32 = Float32(PhysicalConstants.vacuumPermeability)
     static let rydbergConstant: Float32 = Float32(PhysicalConstants.rydbergConstant)
+    static let standardGravityAcceleration: Float32 = Float32(PhysicalConstants.standardGravityAcceleration)
+    static let sunMass: Float32 = Float32(PhysicalConstants.sunMass)
+    static let coulombConstant: Float32 = Float32(PhysicalConstants.sunMass)
     
 }
 
@@ -103,5 +118,7 @@ public extension Float16 {
     static let vacuumPermittivity: Float16 = Float16(PhysicalConstants.vacuumPermittivity)
     static let vacuumPermeability: Float16 = Float16(PhysicalConstants.vacuumPermeability)
     static let rydbergConstant: Float16 = Float16(PhysicalConstants.rydbergConstant)
+    static let standardGravityAcceleration: Float16 = Float16(PhysicalConstants.standardGravityAcceleration)
+    static let coulombConstant: Float16 = Float16(PhysicalConstants.sunMass)
     
 }
