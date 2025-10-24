@@ -28,7 +28,7 @@ public extension Double {
         }
 
         // Then we convert it in the unit we want
-        switch originUnit {
+        switch targetUnit {
             case .Day:
                 result = result / 86400
             case .SideralDay: 
@@ -38,7 +38,7 @@ public extension Double {
             case .Minute:
                 result = result / 60
             case .Second:
-                result = result / 1
+                result = result * 1
         }
 
         return result
