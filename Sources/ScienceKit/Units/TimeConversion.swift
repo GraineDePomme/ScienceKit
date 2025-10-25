@@ -1,11 +1,11 @@
 import Foundation
 
 public enum TimeUnit {
-    case Day
-    case SideralDay
-    case Hour
-    case Minute
-    case Second
+    case day
+    case sideralDay
+    case hour
+    case minute
+    case second
 }
 
 public extension Double {
@@ -15,29 +15,29 @@ public extension Double {
 
         // We first convert the value in seconds
         switch originUnit {
-            case .Day:
+            case .day:
                 result = result * 86400
-            case .SideralDay: 
+            case .sideralDay: 
                 result = result * 86164.0905
-            case .Hour:
+            case .hour:
                 result = result * 3600
-            case .Minute:
+            case .minute:
                 result = result * 60
-            case .Second:
+            case .second:
                 result = result * 1
         }
 
         // Then we convert it in the unit we want
         switch targetUnit {
-            case .Day:
+            case .day:
                 result = result / 86400
-            case .SideralDay: 
+            case .sideralDay: 
                 result = result / 86164.0905
-            case .Hour:
+            case .hour:
                 result = result / 3600
-            case .Minute:
+            case .minute:
                 result = result / 60
-            case .Second:
+            case .second:
                 result = result * 1
         }
 

@@ -100,7 +100,7 @@ public struct Polynomial {
             } else {
                 // Three real roots
                 let r: Double = sqrt(-pow(p, 3) / 27)
-                let phi: Double = acos(-q / (2 * sqrt(-pow(p, 3) / 27)))
+                let phi: Double = acos(-q / (2 * r))
                 let t1: Double = 2 * sqrt(-p / 3) * cos(phi / 3) - A / 3
                 let t2: Double = 2 * sqrt(-p / 3) * cos((phi + 2 * .pi) / 3) - A / 3
                 let t3: Double = 2 * sqrt(-p / 3) * cos((phi + 4 * .pi) / 3) - A / 3
