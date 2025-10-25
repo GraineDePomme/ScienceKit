@@ -14,4 +14,7 @@ extension Double {
     /// The volumetric mean radius of the Earth : m
     public static let earthRadius: Double = 6371e3
 
+    // The speed of light in vacuum : m s^-1
+    public static let speedOfLight: Double = 299_792_458
+
 }
