@@ -26,4 +26,7 @@ public extension Double {
     /// The mass of an electron : kg
     static let electronMass: Double = 9.109_383_7139e-31
 
+    /// The mass of the Sun : kg
+    static let sunMass: Double = 1.9891e30
+
 }
