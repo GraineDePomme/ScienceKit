@@ -7,7 +7,7 @@ export Length, convert
     Nanometers
 end
 
-function convert(value::Float64, from::Length, exponent::Float64 = 1.0, to::Length)
+function convert(value::Float64; from::Length; exponent::Float64 = 1.0; to::Length)
     base_unit = from
     target_unit = to
 
