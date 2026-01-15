@@ -1,5 +1,3 @@
-module UnitConversion
-
 export Length, convert
 
 @enum Length begin
@@ -28,6 +26,4 @@ function convert(value::Float64; from::Length, exponent::Float64 = 1.0, to::Leng
     end
 
     return result
-end
-
 end
