@@ -1,6 +1,6 @@
 module UnitConversion
 
-export Length
+export Length, convert
 
 @enum Length begin
     Meters
