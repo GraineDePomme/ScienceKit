@@ -1,5 +1,3 @@
-export Length, convert
-
 @enum Length begin
     Meters
     Nanometers
