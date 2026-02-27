@@ -11,7 +11,7 @@ export Length, convert
     Picometers
 end
 
-function convert(value::Number; from::Length, exponent::Number, to::Length)
+function convert(value::Number; from::Length, exponent::Number=1, to::Length)
     base_unit = from
     target_unit = to
 
